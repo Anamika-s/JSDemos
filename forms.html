@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head> <title> Forms Demo </title>
+  <script>
+    function GetDetails()
+    {
+      var name = document.getElementById("txtName").value;
+      var address = document.getElementById("txtAddress").value;
+      var marks = document.getElementById("txtMarks").value;
+      console.log(name + " " + address + " " + marks);
+      // alert(name + " " + address + " " + marks);
+    }
+  </script>
+  </head>
+  <body>
+    <h1> Data Entry Form </h1>
+    <form>
+      <div id="d1">  Fill Values here </div>
+      <div>
+      <label for="txtName"> Enter Name </label>
+          <input type="text" name="txtName" id="txtName"/>
+      </div>
+      <div>
+        <label for="txtAddress"> Enter Address </label>
+         <input type="text" name="txtAddress" id="txtAddress"/>
+      </div>
+      <div>
+        <label for="txtMarks"> Enter Marks  </label>
+        <input type="number" name="txtMarks" id="txtMarks"/>
+      </div>
+  <button type="button" onclick="document.getElementById('d1').innerHTML='The text has been changed';"> Click here  </button>
+<button type="button" onclick="alert('Button has been clicked');"> Click  </button>
+<button type="button" onclick="alert(document.getElementById('txtName').value)"> Get Name   </button>
+<button type="button" onclick="GetDetails();"> Get Details   </button>
+
+</form>
+  </body>
+</html>
