@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Strings Demo </title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="txtSentence"> Enter Sentence </label>
+        <input type="text" name="txtSentence" id="txtSentence"/>
+      </div>
+      <button type="button" onclick="CheckLength()"> CheckLength  </button>
+    </form>
+  <script>
+    let str = "Apple, Banana, Kiwi";
+    console.log(str.slice(2,4));
+    console.log(str.substring(7, 13) ) ;
+    console.log(str.toUpperCase());
+    let text = "5";
+console.log(text.padStart(40,'*'));  
+  </script>
+   
+  <p>Display "Good day!" if the hour is less than 18:00:</p>
+
+  <p id="demo">Good Evening!</p>
+  
+  <script>
+    console.log(new Date());
+    console.log(new Date().getFullYear());
+    console.log(new Date().getHours());
+  if (new Date().getHours() < 18) {
+    document.getElementById("demo").innerHTML = "Good day!";
+  }
+  </script>
+    <script src="script.js"> </script>
+  </body>
+
+</html>
